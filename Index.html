@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Comandos Linux</title>
+    <style>
+        body {
+          background-color: #f8f9fa;
+          font-family: Arial, sans-serif;
+        }
+        .jumbotron {
+          background-color: #343a40;
+          color: #fff;
+          padding: 3rem;
+          border-radius: 0;
+        }
+        .jumbotron h1 {
+          font-size: 3rem;
+          font-weight: bold;
+        }
+        .lead {
+          font-size: 1.5rem;
+        }
+        .table {
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .custom-link {
+          color: rgb(2, 43, 37) !important; 
+          text-decoration: underline;
+        }
+      </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="display-4">Comandos Linux</h1>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Comando</th>
+                  <th>Descripción</th>
+                  <th>#</th>
+                  <th>Comando</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><b>1</b></td>
+                  <td><a href="/imagenes.html#arch" class="custom-link">arch</a></td>
+                  <td>LEl comando arch en un sistema Ubuntu Server muestra la arquitectura del hardware de la máquina en la que se está ejecutando el sistema operativo. Proporciona información sobre si el sistema está utilizando una arquitectura de 32 bits (x86) o de 64 bits (x86_64).</td>
+                  <td><b>39</b></td>
+                  <td><a href="/imagenes.html#uname-m" class="custom-link">uname -m</a></td>
+                  <td>El comando uname -m en Ubuntu Server proporciona información similar al comando arch. También muestra la arquitectura del hardware del sistema, pero en una forma ligeramente diferente.</td>
+                </tr>
+                <tr>
+                  <td><b>2</b></td>
+                  <td><a href="/imagenes.html#uname-r" class="custom-link">uname -r</a></td>
+                  <td>El comando uname -r en Ubuntu Server muestra la versión del kernel del sistema operativo en uso.</td>
+                  <td><b>40</b></td>
+                  <td><a href="/imagenes.html#dmidecode-q" class="custom-link">dmidecode -q </a></td>
+                  <td>El comando dmidecode -q en Ubuntu Server muestra información detallada sobre el hardware del sistema utilizando el estándar de administración de datos del sistema (DMI). Sin embargo, es importante tener en cuenta que dmidecode generalmente requiere privilegios de superusuario para ejecutarse, por lo que puede ser necesario ejecutarlo con el prefijo sudo en sistemas Ubuntu.</td>
+                </tr>
+                <tr>
+                  <td><b>3</b></td>
+                  <td><a href="/imagenes.html#hdparm-i" class="custom-link">hdparm -i /dev/hda</a></td>
+                  <td>El comando hdparm -i /dev/hda se utiliza para mostrar información detallada sobre un dispositivo de almacenamiento en particular en un sistema Linux. Sin embargo, ten en cuenta que el dispositivo /dev/hda se refiere a un dispositivo de almacenamiento IDE, y en sistemas modernos es más probable que se utilice un dispositivo SATA o NVMe.</td>
+                  <td><b>41</b></td>
+                  <td><a href="/imagenes.html#dparm-tT" class="custom-link">hdparm -tT /dev/sda </a></td>
+                  <td>El comando hdparm -tT /dev/sda se utiliza para realizar pruebas de rendimiento de lectura en un dispositivo de almacenamiento específico en un sistema Linux. En este caso, se está ejecutando una prueba de rendimiento de lectura secuencial en el dispositivo /dev/sda, que es comúnmente el primer disco SATA en un sistema. Aquí está lo que hace cada opción -t: Realiza una prueba de tiempo de lectura. Mide cuánto tiempo tarda en leer bloques de datos desde el dispositivo de almacenamiento -T: Realiza una prueba de caché de tiempo de lectura. Intenta leer datos de la memoria caché del disco en lugar de acceder físicamente al dispositivo.</td>
+                </tr>
+                <tr>
+                  <td><b>4</b></td>
+                  <td><a href="/imagenes.html#cat/proc" class="custom-link">cat proc/cpuinfo</a></td>
+                  <td>El comando cat /proc/cpuinfo muestra información detallada sobre la CPU(s) en un sistema Linux, incluyendo detalles como el fabricante, modelo, velocidad, número de núcleos, entre otros. Puedes ejecutarlo en una terminal de tu sistema Ubuntu Server.</td>
+                  <td><b>42</b></td>
+                  <td><a href="/imagenes.html#whereis halt" class="custom-link">whereis halt</a></td>
+                  <td>El comando whereis halt se utiliza para mostrar la ubicación de los archivos binarios, código fuente y páginas de manual relacionadas con el comando halt en el sistema de archivos. halt es un comando que se utiliza para detener el sistema, apagarlo o reiniciarlo, dependiendo de las opciones proporcionadas.</td>
+                </tr>
+                <tr>
+                  <td><b>5</b></td>
+                  <td><a href="/imagenes.html#ls-lSr" class="custom-link">ls -lSr |more</a></td>
+                  <td>Este comando permite visualizar de manera organizada y paginada la lista de archivos y directorios en un directorio específico, mostrando primero los archivos más grandes. Esto puede ser útil cuando se necesita revisar una gran cantidad de archivos de manera ordenada.</td>
+                  <td><b>43</b></td>
+                  <td><a href="/imagenes.html#ps" class="custom-link">ps </a></td>
+                  <td>El comando ps en Ubuntu Server se utiliza para mostrar información sobre los procesos que se están ejecutando en el sistema. Sin ningún argumento adicional, ps muestra una lista de los procesos asociados con la terminal actual.</td>
+                </tr>
+                <tr>
+                  <td><b>6</b></td>
+                  <td><a href="/imagenes.html#kill-9ID_Processo" class="custom-link"></a>kill -9 ID_Processo</td>
+                  <td>El comando kill -9 ID_Proceso se utiliza para enviar una señal de terminación forzada al proceso con el ID especificado. El valor "-9" indica que se debe enviar la señal SIGKILL, que es una señal que termina inmediatamente el proceso sin darle la oportunidad de realizar ninguna limpieza o manejo de la señal.</td>
+                  <td><b>44</b></td>
+                  <td><a href="/imagenes.html#tail" class="custom-link">tail</a></td>
+                  <td>Es un comando en sistemas Unix y Unix-like (como Linux) que se utiliza principalmente para mostrar las últimas líneas de uno o varios archivos de texto. Es una herramienta útil para monitorear archivos de registro en tiempo real, así como para extraer información relevante al final de un archivo.</td>
+                </tr>
+                <tr>
+                  <td><b>7</b></td>
+                  <td><a href="/imagenes.html#top" class="custom-link">top:</a></td>
+                  <td>El comando top en Ubuntu Server (y en otros sistemas Unix y Linux) se utiliza para mostrar información en tiempo real sobre los procesos que se están ejecutando en el sistema, así como sobre el uso de recursos como CPU, memoria y swap. Al ejecutar el comando top, se muestra una lista de procesos en orden descendente de uso de CPU por defecto. Esta lista se actualiza periódicamente para reflejar los cambios en el sistema.</td>
+                  <td><b>45</b></td>
+                  <td><a href="/imagenes.html#host" class="custom-link">Host</a></td>
+                  <td>En sistemas Unix y Linux, el comando host se utiliza para realizar consultas DNS (Sistema de Nombres de Dominio). Permite obtener información sobre nombres de dominio, como direcciones IP asociadas, registros MX (Mail Exchange), registros de servicio (SRV), y más.</td>
+                </tr>
+                <tr>
+                  <td><b>8</b></td>
+                  <td><a href="/imagenes.html#tar-tf" class="custom-link">tar -tf archive.tar</a></td>
+                  <td>El comando tar -tf archive.tar se utiliza para listar el contenido de un archivo tar sin extraerlo. Aquí está lo que hace cada parte del comando: tar: Este es el programa de archivado que se utiliza para crear, manipular y extraer archivos tar. -t: Esta opción indica a tar que debe listar el contenido del archivo tar en lugar de extraerlo. -f archive.tar: Esta opción especifica el nombre del archivo tar del cual se debe listar el contenido. En este caso, el archivo se llama archive.tar.</td>
+                  <td><b>46</b></td>
+                  <td><a href="/imagenes.html#tar-xvfj" class="custom-link">tar -xvfj
+                    archive.tar.bz2</a></td>
+                  <td>El comando que has proporcionado, tar -xvfj archive.tar.bz2, parece ser una combinación de opciones para el comando tar. Aquí está qué significa cada parte: tar: El programa de archivado utilizado. -x: Esta opción indica a tar que extraiga archivos del archivo especificado. -v: Esta opción indica a tar que muestre el progreso de la extracción mientras se realiza. -f: Esta opción es seguida por el nombre del archivo de destino del que se extraerán los archivos. En este caso, debería ser archive.tar.bz2. -j: Esta opción le dice a tar que el archivo especificado está comprimido con bzip2.</td>
+                </tr>
+                <tr>
+                  <td><b>9</b></td>
+                  <td><a href="/imagenes.html#init0" class="custom-link">init 0</a></td>
+                  <td>El comando init 0 se utiliza en sistemas Unix y Linux para apagar el sistema de forma segura. En los sistemas basados en System V init, como algunas versiones antiguas de Linux, el nivel de ejecución 0 se asocia con el apagado del sistema.</td>
+                  <td><b>47</b></td>
+                  <td><a href="/imagenes.html#shutdown -c" class="custom-link">shutdown -c </a></td>
+                  <td>El comando shutdown -c se utiliza para cancelar un apagado programado o una tarea de reinicio en sistemas Unix y Linux.</td>
+                </tr>
+                <tr>
+                  <td><b>10</b></td>
+                  <td><a href="/imagenes.html#exit" class="custom-link">Exit</a></td>
+                  <td>El comando exit se utiliza para cerrar la sesión actual en la línea de comandos de Unix o Linux. Cuando ejecutas exit, el intérprete de comandos (como Bash) termina y la sesión actual se cierra, lo que puede ser una sesión de terminal o una conexión SSH. Es importante tener en cuenta que exit solo cierra la sesión actual en la línea de comandos, pero no apaga ni reinicia el sistema. Si estás utilizando una interfaz de usuario gráfica, exit generalmente cerrará la ventana o el terminal en el que estás trabajando.</td>
+                  <td><b>48</b></td>
+                  <td><a href="/imagenes.html#cat/proc/net/dev" class="custom-link"> cat /proc/net/dev</a></td>
+                  <td>Muestra información detallada sobre el tráfico de red de todas las interfaces de red disponibles en el sistema. Al ejecutar este comando, se muestran dos columnas principales para cada interfaz de red: "Receive" (recepción) y "Transmit" (transmisión). Estas columnas proporcionan información sobre el número de bytes y paquetes recibidos y enviados a través de cada interfaz de red desde el último reinicio del sistema. Esta información es útil para monitorear la actividad de red y el rendimiento del sistema en tiempo real.</td>
+                </tr>
+                <tr>
+                  <td><b>11</b></td>
+                  <td><a href="/imagenes.html#cat/proc/interrupts" class="custom-link">cat
+                    /proc/interrupts</a></td>
+                  <td>El comando cat /proc/interrupts muestra información detallada sobre las interrupciones de hardware que han ocurrido en el sistema. Este archivo proporciona una visión general de cómo se están utilizando los recursos del sistema en términos de interrupciones.
+                  La salida típica de cat /proc/interruptsmuestra una tabla con varias columnas.Cada fila de la tabla representa unafuente de interrupción (como uncontrolador de dispositivo) y cadacolumna muestra el número deinterrupciones que han sido atendidas porcada CPU del sistema. La tabla puedeincluir información sobre interrupcionesde temporizador, dispositivos de red,controladores de disco, y otroscomponentes del hardware.</td>
+                  <td><b>49</b></td>
+                  <td><a href="/imagenes.html#cat/proc/meminfo" class="custom-link">cat /proc/meminfo</a></td>
+                  <td>es un comando utilizado en sistemas Unix y Linux para mostrar información detallada sobre el uso de la memoria del sistema. Proporciona datos como la cantidad total de memoria disponible, la cantidad de memoria libre, la cantidad utilizada por procesos activos y la cantidad de memoria utilizada para el sistema de archivos en caché. En resumen, sirve para obtener información sobre el estado y el uso de la memoria del sistema en tiempo real.</td>
+                </tr>
+                <tr>
+                  <td><b>12</b></td>
+                  <td><a href="/imagenes.html#cat /proc/swaps" class="custom-link">cat /proc/swaps</a></td>
+                  <td>Muestra información sobre el espacio de intercambio (swap) disponible en el sistema. El espacio de intercambio es una parte del disco duro que se utiliza como extensión de la memoria RAM cuando esta última se agota. Al ejecutar este comando, se muestra una lista de los dispositivos o archivos de intercambio activos en el sistema, así como información sobre su tamaño, tipo y uso. Esto puede ser útil para verificar el estado del espacio de intercambio en el sistema y su utilización.</td>
+                  <td><b>50</b></td>
+                  <td><a href="/imagenes.html#cat/proc/mounts" class="custom-link">cat /proc/mounts</a></td>
+                  <td>Muestra una lista de todos los sistemas de archivos actualmente montados en el sistema. Proporciona información detallada sobre cada sistema de archivos montado, incluyendo el dispositivo, el punto de montaje, el tipo de sistema de archivos y las opciones de montaje utilizadas. Esta información es útil para verificar qué sistemas de archivos están actualmente accesibles y montados en el sistema.</td>
+                </tr>
+
+                <tr>
+                  <td><b>13</b></td>
+                  <td><a href="/imagenes.html#lspci -tv" class="custom-link"></a>lspci -tv</td>
+                  <td>Muestra una representación jerárquica de todos los dispositivos PCI conectados al sistema. La salida incluye información sobre los buses PCI, los dispositivos conectados a esos buses y sus relaciones jerárquicas. Esto puede ser útil para comprender la estructura de los dispositivos PCI en el sistema y su interconexión.</td>
+                  <td><b>51</b></td>
+                  <td><a href="/imagenes.html#which" class="custom-link">which </a></td>
+                  <td>Se utiliza en sistemas Unix y Linux para determinar la ubicación de un ejecutable en el sistema de archivos. Al proporcionar el nombre de un comando como argumento al comando which, este mostrará la ruta completa del archivo ejecutable asociado con ese comando. Esto puede ser útil para verificar la ubicación de un programa en particular y asegurarse de que esté en el PATH del sistema y sea ejecutable.</td>
+                </tr>
+                <tr>
+                  <td><b>14</b></td>
+                  <td><a href="/imagenes.html#dushdir1" class="custom-link">du -sh dir1 </a></td>
+                  <td>Se utiliza para mostrar el tamaño total del directorio dir1 en el sistema de archivos, en un formato legible por humanos.</td>
+                  <td><b>52</b></td>
+                  <td><a href="/imagenes.html#ps-eafw" class="custom-link">ps -eafw</a></td>
+                  <td>Se utiliza para mostrar una lista detallada de todos los procesos en ejecución en el sistema, incluyendo aquellos de todos los usuarios.</td>
+                </tr>
+                <tr>
+                  <td><b>15</b></td>
+                  <td><a href="/imagenes.html#kill-1ID_Processo" class="custom-link"> kill -1 ID_Processo</a></td>
+                  <td>Envía la señal SIGHUP al proceso especificado, lo que generalmente solicita al proceso que recargue su configuración o reinicie.</td>
+                  <td><b>53</b></td>
+                  <td><a href="/imagenes.html#who" class="custom-link">who</a></td>
+                  <td>Muestra una lista de los usuarios que están actualmente conectados al sistema, junto con información adicional como el nombre de usuario, la terminal desde la que están conectados y la hora de inicio de la sesión.</td>
+                </tr>
+                <tr>
+                  <td><b>16</b></td>
+                  <td><a href="/imagenes.html#whois" class="custom-link">whois </a></td>
+                  <td>Se utiliza para obtener información sobre un dominio, como el propietario registrado del dominio, la fecha de registro, los servidores de nombres (DNS) asociados y otra información relacionada con la inscripción del dominio. Es útil para investigar la propiedad de un sitio web o un dominio específico en Internet.</td>
+                  <td><b>54</b></td>
+                  <td>tar </td>
+                  <td>Se utiliza en sistemas Unix y Linux para crear, manipular y extraer archivos y directorios en un archivo comprimido. Es una herramienta muy versátil y se utiliza comúnmente para crear copias de seguridad, empaquetar archivos para transferirlos o almacenarlos de manera eficiente, y para comprimir múltiples archivos en un solo archivo.</td>
+                </tr>
+                <tr>
+                  <td><b>17</b></td>
+                  <td><a href="/imagenes.html#tar-xvfarchive.tar" class="custom-link">tar -xvf
+                    archive.tar</a></td>
+                  <td>Se utiliza para extraer el contenido de un archivo tar llamado archivo.tar en el directorio actual. </td>
+                  <td><b>55</b></td>
+                  <td><a href="/imagenes.html#tar-cvfz" class="custom-link">tar -cvfz
+                    archive.tar.gz dir1</a></td>
+                  <td>Crear un archivo tar comprimido llamado archivo.tar.gz que contiene el contenido del directorio dir1, utilizando la opción -z para comprimirlo con gzip.</td>
+                </tr>
+
+                <tr>
+                  <td><b>18</b></td>
+                  <td><a href="/imagenes.html#telinit0" class="custom-link">telinit 0</a></td>
+                  <td>Se utiliza en sistemas Unix y Linux para cambiar el nivel de ejecución del sistema al nivel 0, que generalmente está asociado con el apagado del sistema. Al ejecutar este comando, se inicia el proceso de apagado del sistema de forma controlada.</td>
+                  <td><b>56</b></td>
+                  <td><a href="/imagenes.html#shutdown-rnow" class="custom-link">shutdown -r now</a></td>
+                  <td>Se utiliza en sistemas Unix y Linux para reiniciar el sistema de forma inmediata. Al ejecutar este comando, se inicia el proceso de reinicio del sistema de manera controlada y todos los usuarios son notificados de que el sistema se reiniciará. La opción -r indica que se debe realizar un reinicio, y now especifica que el reinicio debe ocurrir de inmediato.</td>
+                </tr>
+                <tr>
+                  <td><b>19</b></td>
+                  <td><a href="/imagenes.html#Vi" class="custom-link">Vi</a></td>
+                  <td>Es un editor de texto en pantalla para sistemas Unix y Linux. Es uno de los editores de texto más antiguos y poderosos disponibles en estos sistemas. Vi tiene dos modos principales: el modo de comando y el modo de inserción.</td>
+                  <td><b>57</b></td>
+                  <td><a href="/imagenes.html#lsusb-tv" class="custom-link">lsusb -tv </a></td>
+                  <td>Se utiliza en sistemas Unix y Linux para mostrar una representación jerárquica de los dispositivos USB conectados al sistema.</td>
+                </tr>
+
+                <tr>
+                  <td><b>20</b></td>
+                  <td><a href="/imagenes.html#date" class="custom-link">date</a></td>
+                  <td>Se utiliza en sistemas Unix y Linux para mostrar la fecha y la hora actual del sistema. Cuando se ejecuta sin opciones adicionales, simplemente muestra la fecha y la hora actual en el formato predeterminado del sistema.</td>
+                  <td><b>58</b></td>
+                  <td><a href="/imagenes.html#cal2024" class="custom-link">cal 2024</a></td>
+                  <td>El comando cal 2024 en Linux muestra el calendario del año 2024</td>
+                </tr>
+                <tr>
+                  <td><b>21</b></td>
+                  <td><a href="/imagenes.html#cal07" class="custom-link">cal 07 2024</a></td>
+                  <td>El comando cal 07 2024 en Linux muestra el calendario del mes de julio del año 2024</td>
+                  <td><b>59</b></td>
+                  <td><a href="/imagenes.html#date041217002011.00" class="custom-link">date 041217002011.00</a></td>
+                  <td>El comando date 041217002011.00 no es un comando válido en Linux</td>
+                </tr>
+                <tr>
+                  <td><b>22</b></td>
+                  <td><a href="/imagenes.html#find" class="custom-link">Find</a></td>
+                  <td>Es una herramienta de línea de comandos utilizada en sistemas Unix y Linux para buscar archivos y directorios en un sistema de archivos.</td>
+                  <td><b>60</b></td>
+                  <td><a href="/imagenes.html#find/-namefile1" class="custom-link">find / -name file1</a></td>
+                  <td>El comando que has proporcionado busca un archivo llamado "file1" en todo el sistema de archivos, comenzando desde el directorio raíz "/". Este comando buscará recursivamente en todo el sistema de archivos (incluidos subdirectorios y archivos) en busca de un archivo específico llamado "file1".</td>
+                </tr>
+
+                <tr>
+                  <td><b>23</b></td>
+                  <td><a href="/imagenes.html#whichhalt" class="custom-link">which halt</a></td>
+                  <td>Se utiliza para apagar el sistema. Cuando se ejecuta este comando, el sistema se detendrá por completo de manera segura y se apagará la alimentación. Es una forma de apagar el sistema operativo y el hardware de manera controlada.</td>
+                  <td><b>61</b></td>
+                  <td>du -sk * | sort -rn </td>
+                  <td>se utiliza para mostrar el tamaño de los directorios y archivos en el directorio actual, ordenados de mayor a menor tamaño. </td>
+                </tr>
+
+                <tr>
+                  <td><b>24</b></td>
+                  <td><a href="/imagenes.html#ps-e-o" class="custom-link">ps -e -o pid,args - forest</a></td>
+                  <td>El comando que has proporcionado, "ps -e -o pid,args forest", se utiliza para mostrar la lista de procesos en formato de árbol (en forma de bosque), lo que proporciona una visualización jerárquica de los procesos en ejecución en el sistema.</td>
+                  <td><b>62</b></td>
+                  <td><a href="/imagenes.html#lsof-p" class="custom-link">lsof -p $$</a></td>
+                  <td>Se utiliza para listar los archivos abiertos por el proceso actual</td>
+                </tr>
+                <tr>
+                  <td><b>25</b></td>
+                  <td><a href="/imagenes.html#alias" class="custom-link">alias</a></td>
+                  <td>Un alias en el contexto de sistemas Unix y Linux es un nombre alternativo o abreviado que se puede asignar a un comando o combinación de comandos. Los alias son especialmente útiles para crear atajos personalizados, simplificar comandos frecuentes o para modificar el comportamiento predeterminado de un comando.</td>
+                  <td><b>63</b></td>
+                  <td><a href="/imagenes.html#nslookup" class="custom-link">Nslookup</a></td>
+                  <td>se utiliza para consultar servidores de nombres de dominio (DNS) para obtener información sobre los registros de recursos de un dominio o para realizar la resolución inversa de direcciones IP a nombres de dominio.</td>
+                </tr>
+                <tr>
+                  <td><b>26</b></td>
+                  <td><a href="/imagenes.html#tar-cvffile1" class="custom-link">tar -cvf
+                    archive.tar file1</a></td>
+                  <td>Se utiliza para crear un archivo tar llamado "archive.tar" que contiene el archivo "file1".</td>
+                  <td><b>64</b></td>
+                  <td><a href="/imagenes.html#tar-xvf-c" class="custom-link">tar -xvf archive.tar -C</a></td>
+                  <td>Se utiliza para extraer archivos de un archivo tar. Sin embargo, el comando está incompleto ya que falta el nombre del archivo que se desea extraer. Además, la opción "-C" también necesita un directorio de destino al que se quieren extraer los archivos.</td>
+                </tr>
+                <tr>
+                  <td><b>27</b></td>
+                  <td><a href="/imagenes.html#tar-xvfz archive.tar.gz" class="custom-link">tar -xvzf archive.tar.gz</a></td>
+                  <td>Intenta extraer los archivos de un archivo comprimido con gzip y tar.</td>
+                  <td><b>65</b></td>
+                  <td><a href="/imagenes.html#halt:" class="custom-link">halt: </a></td>
+                  <td>Se utiliza para apagar o detener un sistema Unix o Linux de forma segura. Sin embargo, para ejecutar este comando, generalmente necesitas privilegios de superusuario (root) o estar utilizando el comando con sudo</td>
+                </tr>
+                <tr>
+                  <td><b>28</b></td>
+                  <td><a href="/imagenes.html#reboot:" class="custom-link">Reboot:</a></td>
+                  <td>Se utiliza para reiniciar un sistema Unix o Linux. Al igual que con el comando halt, generalmente necesitas privilegios de superusuario (root) o utilizar sudo para ejecutar este comando.</td>
+                  <td><b>66</b></td>
+                  <td><a href="/imagenes.html#nano" class="custom-link">Nano</a></td>
+                  <td>Es un editor de texto simple y fácil de usar que funciona en la mayoría de los sistemas Unix y Linux. Puedes utilizarlo para crear y editar archivos de texto directamente desde la línea de comandos. Para abrir un archivo con Nano, simplemente escribe nano seguido del nombre del archivo que deseas editar.</td>
+                </tr>
+                <tr>
+                  <td><b>29</b></td>
+                  <td><a href="/imagenes.html#findUser" class="custom-link">find / -user user1</a></td>
+                  <td>Se utiliza para buscar archivos y directorios en un sistema de archivos Unix o Linux. En tu comando, estás buscando archivos y directorios que pertenecen al usuario user1 en todo el sistema de archivos (/ indica la raíz del sistema de archivos).</td>
+                  <td><b>67</b></td>
+                  <td>find /home/user1 -name \*.bin</td>
+                  <td>Se utiliza para buscar archivos con extensión .bin en el directorio /home/user1 y en sus subdirectorios. </td>
+                </tr>
+                <tr>
+                  <td><b>30</b></td>
+                  <td>find /usr/bin -typef -atime +100</td>
+                  <td>Se utiliza para buscar archivos regulares (no directorios ni enlaces simbólicos) en el directorio /usr/bin que hayan sido accedidos por última vez hace más de 100 días.</td>
+                  <td><b>68</b></td>
+                  <td>find /usr/bin -typef -mtime -10</td>
+                  <td>Se utiliza para buscar archivos regulares (no directorios ni enlaces simbólicos) en el directorio /usr/bin que hayan sido modificados en los últimos 10 días.</td>
+                </tr>
+                <tr>
+                  <td><b>31</b></td>
+                  <td>
+                    find / -name \*.apt -exec chmod 755 ‘{}’ \;</td>
+                  <td>Está destinado a buscar archivos con extensión .apt en todo el sistema de archivos y cambiar sus permisos a 755. </td>
+                  <td><b>69</b></td>
+                  <td><a href="/imagenes.html#locate" class="custom-link">Locate</a></td>
+                  <td>Es una herramienta que se utiliza para buscar archivos y directorios en el sistema de archivos. Este comando busca a través de una base de datos indexada de nombres de archivos y directorios, lo que lo hace mucho más rápido que buscar manualmente a través del sistema de archivos.</td>
+                </tr>
+                <tr>
+                  <td><b>32</b></td>
+                  <td><a href="/imagenes.html#Whereis" class="custom-link">Whereis</a></td>
+                  <td>Se utiliza para encontrar la ubicación de los binarios, fuentes y páginas de manual de un programa específico. Proporciona información sobre dónde están ubicados los archivos relacionados con un comando en particular en el sistema de archivos.</td>
+                  <td><b>70</b></td>
+                  <td><a href="/imagenes.html#df-h" class="custom-link">Df -h</a></td>
+                  <td>Para mostrar información sobre el espacio disponible y utilizado en los sistemas de archivos montados. La opción -h hace que los tamaños se muestren en un formato más legible para los humanos</td>
+                </tr>
+                <tr>
+                  <td><b>33</b></td>
+                  <td><a href="/imagenes.html#top1" class="custom-link">Top</a></td>
+                  <td>Es una herramienta de línea de comandos utilizada en sistemas Unix y Linux para monitorear los procesos en ejecución y la utilización de recursos del sistema, como la CPU, la memoria, la memoria virtual y otros. Proporciona una vista en tiempo real de la actividad del sistema y es útil para identificar procesos que están utilizando muchos recursos o para diagnosticar problemas de rendimiento.</td>
+                  <td><b>71</b></td>
+                  <td><a href="/imagenes.html#pstree:" class="custom-link">pstree:</a></td>
+                  <td>Es una herramienta de línea de comandos que muestra una representación jerárquica de los procesos en ejecución en el sistema. Organiza los procesos en forma de árbol, mostrando las relaciones padre-hijo entre ellos. Esta representación puede ser útil para comprender la estructura de los procesos en el sistema y cómo interactúan entre sí.</td>
+                </tr>
+                <tr>
+                  <td><b>34</b></td>
+                  <td><a href="/imagenes.html#lsof/home/user1" class="custom-link">lsof /home/user1</a></td>
+                  <td>Se utiliza para listar los archivos abiertos por procesos en el sistema. Al proporcionar una ruta como argumento, como en tu caso /home/user1, lsof mostrará los archivos abiertos bajo ese directorio por procesos en ejecución.</td>
+                  <td><b>72</b></td>
+                  <td><a href="/imagenes.html#wget" class="custom-link">Wget</a></td>
+                  <td>Para descargar archivos desde servidores web a través de HTTP, HTTPS y FTP. Es una herramienta muy útil para descargar archivos o páginas web completas de Internet directamente a tu sistema.</td>
+                </tr>
+                <tr>
+                  <td><b>35</b></td>
+                  <td><a href="/imagenes.html#hostname" class="custom-link">Hostname</a></td>
+                  <td>Para mostrar o configurar el nombre del sistema. Cuando se ejecuta sin argumentos, simplemente muestra el nombre de host actual del sistema. Si se ejecuta con argumentos, puede utilizarse para establecer un nuevo nombre de host. El nombre de host es utilizado para identificar el sistema en una red.</td>
+                  <td><b>73</b></td>
+                  <td>tar -cvf archive.tar file1 file2 dir1</td>
+                  <td>Crea un archivo tar llamado archive.tar que contiene los archivos file1 y file2, así como el directorio dir1. </td>
+                </tr>
+                <tr>
+                  <td><b>36</b></td>
+                  <td>tar -cvfj archive.tar.bz2 dir1</td>
+                  <td>Se utiliza para crear un archivo tar comprimido en formato bzip2 que contiene el contenido del directorio dir1.</td>
+                  <td><b>74</b></td>
+                  <td>shutdown -h now</td>
+                  <td>Para apagar el sistema de forma inmediata.</td>
+                </tr>
+                <tr>
+                  <td><b>37</b></td>
+                  <td>shutdown -h hours:minutes &</td>
+                  <td>Intenta apagar el sistema en un momento específico, indicado por hours:minutes, y lo ejecuta en segundo plano utilizando el símbolo &.</td>
+                  <td><b>75</b></td>
+                  <td><a href="/imagenes.html#Logout" class="custom-link">Logout</a></td>
+                  <td>Para cerrar la sesión en un sistema Unix o Linux, generalmente puedes utilizar el comando logout, el comando exit, o presionar Ctrl+D en la terminal. Estos comandos te desconectarán de tu sesión de shell actual.</td>
+                </tr>
+                <tr>
+                  <td><b>38</b></td>
+                  <td><a href="/imagenes.html#cat" class="custom-link">Cat</a></td>
+                  <td>Se utiliza en sistemas Unix y Linux para concatenar y mostrar el contenido de archivos en la salida estándar (generalmente la terminal). También se puede utilizar para crear nuevos archivos o concatenar múltiples archivos en uno solo.</td>
+                  <td><b>76</b></td>
+                  <td><a href="" class="custom-link">figlet</a></td>
+                  <td>es un programa de línea de comandos que se utiliza para generar texto en forma de arte ASCII. Toma una cadena de texto como entrada y la convierte en un diseño artístico utilizando caracteres ASCII más grandes. Es útil para crear encabezados o mensajes visuales en la terminal.</td>
+                </tr>
+                
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
